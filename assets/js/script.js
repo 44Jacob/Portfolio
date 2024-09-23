@@ -47,3 +47,32 @@ sList.forEach((skill, i) => {
         </figure>
     `;
 });
+
+const apps = [
+    {
+        img: "earthquakes.png",
+        name: "Earthquakes Analysis",
+        info: "Application provides the magnitude, radius, depth, location and time of the most reacent earthquakes",
+        website: "https://44jacob.github.io/Earthquake_Analysis/",
+        github: "https://github.com/44Jacob/Earthquake_Analysis"
+    },
+    {
+        img: "dashobard.png",
+        name: "Biodiversity Analysis",
+        info: "Application provides a dashboard with specific subject information which is displayed in different charts",
+        website: "https://44jacob.github.io/Biodiversity-Dashboard/",
+        github: "https://github.com/44Jacob/Biodiversity-Dashboard"
+    },
+
+]
+
+
+`
+<div class="app">
+                    <img src="assets/images/earthquakes.png" alt="">
+                    <div class="info">
+                        <h3>App Name</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <a href="" class="github"><img src="" alt=""></a><a href="" class="website"><img src="" alt=""></a></div>
+                </div>
+`
