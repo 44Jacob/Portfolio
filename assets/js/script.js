@@ -42,29 +42,79 @@ sList.forEach((skill, i) => {
         <figure>
             <a href='${sLinks[i]}' target='blank_'>
                         <figcaption>${skill.toUpperCase()}</figcaption>
-                        <img src="assets/images/${skill}.png">
+                        <img src="assets/images/icons/${skill}.png">
             </a>
         </figure>
     `;
 });
 
 const apps = [
-    {
-        img: "earthquakes.png",
-        name: "Earthquakes Analysis",
-        info: "Application provides the magnitude, radius, depth, location and time of the most reacent earthquakes",
-        website: "https://44jacob.github.io/Earthquake_Analysis/",
-        github: "https://github.com/44Jacob/Earthquake_Analysis"
-    },
-    {
-        img: "dashobard.png",
-        name: "Biodiversity Analysis",
-        info: "Application provides a dashboard with specific subject information which is displayed in different charts",
-        website: "https://44jacob.github.io/Biodiversity-Dashboard/",
-        github: "https://github.com/44Jacob/Biodiversity-Dashboard"
-    },
 
-]
+{
+    img: "python-scripting.png",
+    name: "Python Scripting",
+    info: "This project demonstrates various Python scripting techniques, including automation, data manipulation, and file handling.",
+    website: "",
+    github: "https://github.com/44Jacob/Python-Scripting"
+},
+{
+    img: "portfolio.png",
+    name: "Portfolio",
+    info: "This is my personal portfolio showcasing all my projects, work experience, and skills in data analysis and software development.",
+    website: "https://github.com/44Jacob/Portfolio",
+    github: "https://github.com/44Jacob/Portfolio"
+},
+{
+    img: "dashboard.png",
+    name: "Biodiversity Dashboard",
+    info: "Interactive dashboard providing insights into biodiversity datasets, helping visualize trends in wildlife populations over time.",
+    website: "https://github.com/44Jacob/Biodiversity-Dashboard",
+    github: "https://github.com/44Jacob/Biodiversity-Dashboard"
+},
+{
+    img: "earthquakes.png",
+    name: "Earthquake Analysis",
+    info: "Application provides the magnitude, radius, depth, location, and time of the most recent earthquakes.",
+    website: "https://44jacob.github.io/Earthquake_Analysis/",
+    github: "https://github.com/44Jacob/Earthquake_Analysis"
+},
+{
+    img: "buy-sell.png",
+    name: "Buy or Sell Project",
+    info: "An application that helps users make informed decisions on whether to buy or sell based on financial data analysis.",
+    website: "https://github.com/44Jacob/Buy_Or_Sell_Project",
+    github: "https://github.com/44Jacob/Buy_Or_Sell_Project"
+},
+{
+    img: "fin-tech-analysis.png",
+    name: "Financial Data Tech Analysis",
+    info: "Analysis of various financial datasets using data science techniques to gain insights into stock performance.",
+    website: "https://github.com/44Jacob/FinDataTechAnalysis",
+    github: "https://github.com/44Jacob/FinDataTechAnalysis"
+},
+{
+    img: "stock-prediction.png",
+    name: "Stock Price Prediction",
+    info: "Machine learning model that predicts future stock prices based on historical data and various financial indicators.",
+    website: "https://github.com/44Jacob/Stock-Price-Prediction",
+    github: "https://github.com/44Jacob/Stock-Price-Prediction"
+},
+{
+    img: "sqlalchemy-weather.png",
+    name: "SQLAlchemy Weather Analysis",
+    info: "A weather data analysis project that uses SQLAlchemy to query and analyze weather information stored in databases.",
+    website: "https://github.com/44Jacob/SQLAlchemy-Weather-Analysis",
+    github: "https://github.com/44Jacob/SQLAlchemy-Weather-Analysis"
+},
+{
+    img: "weather-api-analysis.png",
+    name: "Weather API Analysis",
+    info: "An API-based project that retrieves and analyzes real-time weather data, providing insights into temperature trends and anomalies.",
+    website: "https://github.com/44Jacob/Weather-API-Analysis",
+    github: "https://github.com/44Jacob/Weather-API-Analysis"
+}
+];
+
 
 
 `
