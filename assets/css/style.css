@@ -23,14 +23,14 @@ nav h1 {
 #aboutMe {
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
     margin: 20px auto;
-    background: linear-gradient(35deg, white 20%, transparent 80%);
-    border-radius: 0 25px;
-    box-shadow: 5px 5px 5px black;
-    transform: rotate(5deg);
+    /* background: linear-gradient(35deg, white 20%, transparent 80%); */
+    /* border-radius: 0 25px; */
+    /* box-shadow: 5px 5px 5px black; */
+    /* transform: rotate(5deg); */
     margin-top: 80px;
-    max-width: 1000px;
+    /* max-width: 1000px; */
 }
 
 #aboutMe figure {
@@ -64,11 +64,18 @@ figure img {
     width: 90%;
     margin: 20px auto;
     height: 30px;
+    padding: 3px 15px 15px 5px;
+    border-radius: 8px;
+}
+
+#skills a {
+    width: 1.5%;
+    height: 100%;
 }
 
 #skills figure {
-    width: 1.5%;
-    margin: 5px;
+    width: 100%;
+    height: 100%;
 }
 
 #skills figure figcaption {
@@ -80,11 +87,12 @@ figure img {
     overflow: hidden;
 }
 
+
 #skills figure img {
     background: #f5e269;
-    padding: 5px;
-    width: 100%;
-    height: 100%;
+    padding: 5%;
+    width: 95%;
+    height: 95%;
     box-shadow: 2px 1px 0px silver, 3px 2px 3px black;
 }
 
@@ -114,22 +122,125 @@ figure img {
 
 #applications {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .app {
-    width: 40%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 50px;
+    margin: 3%;
+    height: 600px;
+}
+
+.app:nth-child(odd) {
+    /* margin: 40px 10% 40px auto; */
+    rotate: -3deg;
+}
+
+.app:nth-child(even) {
+    margin-top: 100px;
+    rotate: 3deg;
+}
+
+.app:nth-child(odd):hover {
+    transition: all .75s;
+    transform: rotate(3deg) scale(1.2);
+}
+
+.app:nth-child(even):hover {
+    transition: all .75s;
+    transform: rotate(-3deg) scale(1.2);
 }
 
 .app img {
     width: 100%;
+    height: 68%;
+    border-radius: 50px 50px 0 0;
 }
 
 .info {
-    background: black;
+    background: #454444;
     color: white;
-    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 29.5%;
+    padding: 4px;
+    width: 98%;
+    border-radius: 0 0 50px 50px;
+    border: 1px solid black;
+}
+
+.info h3 {
+    height: 5%;
+    padding: 10px;
+    margin: 0;
+}
+
+.info p {
+    height: 10%;
+    padding: 2%;
+}
+
+.info figure {
+    height: 50px;
+    width: 40px;
+}
+
+.info figure img {
+    width: 100%;
+}
+
+.info div {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
+
+.hide {
+    /* color: #e9f5fa; */
+}
+
+@keyframes growBounce {
+    0% {
+      transform: scale(1);
+      color: black;
+    }
+    60% {
+      transform: scale(1.2); 
+    }
+    80% {
+      transform: scale(0.95); 
+    }
+    100% {
+      transform: scale(1); 
+      color: black;
+    }
+  }
+  
+  .bouncy-grow {
+    width: 100px;
+    height: 100px;
+    color: black;
+    animation: growBounce 1s ease-out;
+  }
+
+  #contactMe {
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    padding: 25px;
+  }
+
+  #contactMe img {
+    width: 50px;
+  }
+
+  #contactMe figure {
+    text-align: center;
+    color: white;
+  }

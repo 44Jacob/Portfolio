@@ -39,19 +39,19 @@ const sLinks = [
 
 sList.forEach((skill, i) => {
     skills.innerHTML += `
+    <a href='${sLinks[i]}' target='blank_'>
         <figure>
-            <a href='${sLinks[i]}' target='blank_'>
-                        <figcaption>${skill.toUpperCase()}</figcaption>
-                        <img src="assets/images/icons/${skill}.png">
-            </a>
+            <figcaption>${skill.toUpperCase()}</figcaption>
+            <img src="assets/images/icons/${skill}.png">
         </figure>
+    </a>
     `;
 });
 
 const apps = [
 
 {
-    img: "python-scripting.png",
+    img: "python.png",
     name: "Python Scripting",
     info: "This project demonstrates various Python scripting techniques, including automation, data manipulation, and file handling.",
     website: "",
@@ -93,7 +93,7 @@ const apps = [
     github: "https://github.com/44Jacob/FinDataTechAnalysis"
 },
 {
-    img: "stock-prediction.png",
+    img: "stock-price-predictions.png",
     name: "Stock Price Prediction",
     info: "Machine learning model that predicts future stock prices based on historical data and various financial indicators.",
     website: "https://github.com/44Jacob/Stock-Price-Prediction",
@@ -107,7 +107,7 @@ const apps = [
     github: "https://github.com/44Jacob/SQLAlchemy-Weather-Analysis"
 },
 {
-    img: "weather-api-analysis.png",
+    img: "weather-api.png",
     name: "Weather API Analysis",
     info: "An API-based project that retrieves and analyzes real-time weather data, providing insights into temperature trends and anomalies.",
     website: "https://github.com/44Jacob/Weather-API-Analysis",
@@ -116,13 +116,32 @@ const apps = [
 ];
 
 
-
-`
-<div class="app">
-                    <img src="assets/images/earthquakes.png" alt="">
-                    <div class="info">
-                        <h3>App Name</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <a href="" class="github"><img src="" alt=""></a><a href="" class="website"><img src="" alt=""></a></div>
+apps.forEach(({img,name,info,website,github}) => {
+    applications.innerHTML += `
+    
+        <div class="app">
+                <img src="assets/images/apps/${img}" alt="">
+                <div class="info">
+                    <h3>${name}</h3>
+                    <p>${info}</p>
+                    <div>
+                    ${website=='' ? '' : `
+                        <a href='${website}' target='blank_'>
+                            <figure>
+                                <img src="assets/images/icons/www.png" alt="website">
+                                <figcaption style='color:white'>Website</figcaption>
+                            </figure>
+                        </a>
+                    `}
+                    <a href='${github}' target='blank_'>
+                        <figure>
+                            <img src="assets/images/icons/github.png" alt="github">
+                            <figcaption style='color:white'>Github</figcation>
+                        </figure>
+                    </a>
+                    </div>
                 </div>
-`
+            </div>
+    `;
+});
+
